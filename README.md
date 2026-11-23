@@ -99,7 +99,9 @@ npm run build
 npm run preview
 ```
 
-打开预览地址，确认文章进入对应年月，能用标题、作者及摘要中的词检索（如有摘要），点击标题能打开刚审核的 PDF。按站点的部署流程发布这次生成的 `dist/`。产品方案规划使用 GitHub Pages，具体发布仓库和方式以实际部署配置为准。上线后在公开地址再核对文章条目和 PDF 链接。[产品方案](docs/产品方案.md)
+打开预览地址，确认文章进入对应年月，能用标题、作者及摘要中的词检索（如有摘要），点击标题能打开刚审核的 PDF。
+
+预览通过后，提交 `public/articles/` 中本次更新的目录和 PDF，推送至 `main`。GitHub Actions 从仓库源码重新构建并将生成的 `dist/` 发布到 GitHub Pages。部署成功后，在公开站点核对文章条目和 PDF 链接。[部署记录](https://github.com/Mindtoly/jingyan-journal/actions/workflows/pages.yml) · [公开站点](https://mindtoly.github.io/jingyan-journal/)
 
 LaTeX 定稿及其编译资源保存在编辑部。文章发布所需的 PDF 和目录已经写入 `public/articles/`，后续构建从这里取数据，待审文件可按编辑部需要保留或归档。
 
