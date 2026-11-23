@@ -1,0 +1,49 @@
+% !TeX program = xelatex
+\documentclass{jingyan}
+
+\begin{document}
+
+\ArticleTitle{文章标题}{作者姓名}
+\ArticleAbstract{此处填写摘要，简述研究问题、主要论证和结论。}
+\ArticleKeywords{关键词一；关键词二}
+
+\section{问题的提出}
+在此填写正文。每个自然段之间空一行。
+
+\section{分析与论证}
+\subsection{概念与材料}
+叙述式引用示例为\TextCite{作者甲}{2025}[第34页]，括号式引用示例为\ParenCite{作者甲}{2025}。
+
+\subsection{公式示例}
+\begin{equation}\label{eq:mean}
+  \bar{x}=\frac{1}{n}\sum_{i=1}^{n}x_i.
+\end{equation}
+式\eqref{eq:mean}展示了公式编号和交叉引用的写法。
+
+\subsection{表格示例}
+表~\ref{tab:procurement}列出两类采购的示例金额和占比。
+
+\begin{table}[htbp]
+  \centering
+  \small
+  \setlength{\belowcaptionskip}{4pt}
+  \caption{采购构成示例}
+  \label{tab:procurement}
+  \begin{tabular}{lrr}
+    \toprule
+    采购类别 & 采购额（万元） & 占比（\%） \\
+    \midrule
+    本地采购 & 60 & 60 \\
+    外地采购 & 40 & 40 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\section{结论}
+在此填写结论。
+
+\begin{References}
+  \Reference{作者甲，2025：《文章题名》，《刊物名称》第X期，第XX—XX页。}
+\end{References}
+
+\end{document}
