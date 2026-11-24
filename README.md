@@ -9,7 +9,7 @@ npm install
 npm run dev
 ```
 
-打开终端给出的本地地址。运行 `npm run build` 生成静态站点 `dist/`，用 `npm run preview` 检查构建结果。早期交互演示见[独立演示页](docs/theme-preview.html)。
+打开终端给出的本地地址。运行 `npm run build` 生成静态站点 `dist/`，用 `npm run preview` 检查构建结果。
 
 ## 项目目录
 
@@ -19,7 +19,7 @@ npm run dev
 | `public/articles/` | 正式发布的文章目录和 PDF |
 | `public/notices/` | 通知公告目录和正文 |
 | `public/downloads/` | 面向作者的下载附件，包括 LaTeX 模板压缩包 |
-| `docs/` | 产品方案与早期的独立交互演示页 |
+| `docs/` | 产品方案与归档资料 |
 | `templates/article/` | 单篇 LaTeX 模板及使用说明 |
 | `node_modules/` | npm 安装的依赖 |
 | `dist/` | Vite 生成的静态站点 |
